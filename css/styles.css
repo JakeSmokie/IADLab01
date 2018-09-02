@@ -1,0 +1,37 @@
+.custom_body {
+  background: #252F48 url(/images/grayfloor.png);
+  padding: 0;
+  margin: 0;
+}
+
+.body_table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+  font-size: 14px;
+  text-shadow: 1px 1px #1c1c1c;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+.body_table th {
+  padding: 12px 17px;
+  text-align: center;
+}
+.body_table td {
+  padding: 7px 17px;
+}
+
+.c_base, .c_5, .c_4, .c_3, .c_2, .c_1 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  background: #3f4353;
+  margin: 0;
+  color: #EDB749;
+  padding: 12px 17px;
+  text-align: center;
+  box-shadow: #1c1c1c 5px 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
