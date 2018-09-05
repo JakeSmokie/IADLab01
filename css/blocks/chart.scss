@@ -1,0 +1,10 @@
+@import "base";
+
+.block_chart {
+  @extend .block_base;
+
+  p {
+    text-align: center;
+    vertical-align: center;
+  }
+}

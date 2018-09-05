@@ -1,0 +1,14 @@
+@import "base";
+
+.block_results {
+  @extend .block_base;
+
+  height: 225px;
+  border-top: none;
+
+  vertical-align: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: Sans-Serif, serif;
+  color: #C2D076;
+}

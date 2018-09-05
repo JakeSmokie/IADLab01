@@ -1,37 +1,189 @@
-.custom_body {
-  background: #252F48 url(/images/grayfloor.png);
+body {
+    background: #252F48 url(../images/grayfloor.png);
   padding: 0;
   margin: 0;
 }
 
-.body_table {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
-  font-size: 14px;
-  text-shadow: 1px 1px #1c1c1c;
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-}
-.body_table th {
-  padding: 12px 17px;
-  text-align: center;
-}
-.body_table td {
-  padding: 7px 17px;
+body table {
+    width: 1920px;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
-.c_base, .c_5, .c_4, .c_3, .c_2, .c_1 {
+.block_base, .block_chart, .block_results, .block_name {
+    border-collapse: collapse;
+    background: #111111;
+    border: #c90075 dashed 1px;
+}
+
+.block_base_header, .block_name {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
   font-size: 14px;
+    color: #c4c4c4;
+    padding: 0 8px;
+}
+
+.block_name {
+    height: 50px;
+    vertical-align: center;
+    text-align: center;
+    font-size: 16px;
+    border-top: none !important;
+}
+
+.block_name > p {
+    line-height: 75%;
+}
+
+.base_block_input, .block_variables, #block_input {
+    vertical-align: top;
+    font-family: Sans-Serif, serif;
+}
+
+.base_block_input p:not(#button), .block_variables p:not(#button), #block_input p:not(#button) {
+    color: #c4c4c4;
+    text-align: center;
+    background: #111111;
+    border: #c90075 dashed 1px;
+    margin: 5px 0;
+    padding: 12px 0;
+    height: 25px;
+}
+
+#block_input p label {
+    margin: 0 0.25%;
+}
+
+.block_variables p {
+    margin: 5px 5px;
+}
+
+.column_placeholder {
+    width: 200px;
+}
+
+.column_placeholder_small, .block_variables {
+    width: 50px;
+}
+
+.column_placeholder_extra_small {
+    width: 10px;
+}
+
+.row_placeholder {
+    height: 50px;
+}
+
+.row_placeholder_small {
+    height: 50px;
+}
+
+.block_base, .block_chart, .block_results, .block_name {
   border-collapse: collapse;
-  background: #3f4353;
-  margin: 0;
-  color: #EDB749;
-  padding: 12px 17px;
+    background: #111111;
+    border: #c90075 dashed 1px;
+}
+
+.block_results {
+    height: 225px;
+    border-top: none;
+    vertical-align: center;
   text-align: center;
-  box-shadow: #1c1c1c 5px 5px;
+    font-size: 25px;
+    font-family: Sans-Serif, serif;
+    color: #C2D076;
+}
+
+.block_base, .block_chart, .block_name, .block_results {
+  border-collapse: collapse;
+    background: #111111;
+    border: #c90075 dashed 1px;
+}
+
+.block_chart p {
+    text-align: center;
+    vertical-align: center;
+}
+
+.checkbox,
+.radio {
+    display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid #D8005F;
+    border-radius: 3px;
+    background: #001514;
+    position: relative;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom,
+.radio:checked + .radio-custom {
+    border: #C2D076 solid 0.5px;
+}
+
+.checkbox:hover:not(:checked) + .checkbox-custom,
+.radio:hover:not(:checked) + .radio-custom {
+    border: #058ED9 solid 0.5px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
+}
+
+.input_text input {
+    color: #c4c4c4;
+    background: #001514;
+    width: 15%;
+    height: 80%;
+    display: inline-block;
+  text-align: center;
+    vertical-align: center;
+    border: #c90075 solid 1px;
+    border-radius: 1px;
+}
+
+.input_text input:hover {
+    border: #058ED9 solid 1px;
+}
+
+.input_text input:focus {
+    border: #C2D076 solid 1px;
+    outline: none;
+}
+
+.input_button {
+    alignment: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.input_button input {
+    color: #c4c4c4;
+    text-align: center;
+    background: #001514;
+    border: #c90075 dashed 1px;
+    background: none;
+    width: 200px;
+    height: 50px;
+    outline: none;
+}
+
+.input_button input:hover {
+    border: #058ED9 dashed 1px;
 }
 
 /*# sourceMappingURL=styles.css.map */

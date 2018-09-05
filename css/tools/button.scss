@@ -1,0 +1,24 @@
+.input_button {
+  alignment: center;
+  align-items: center;
+
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+
+  input {
+    color: #c4c4c4;
+    text-align: center;
+    background: #001514;
+    border: #c90075 dashed 1px;
+    background: none;
+
+    width: 200px;
+    height: 50px;
+    outline: none;
+  }
+
+  input:hover {
+    border: #058ED9 dashed 1px;
+  }
+}

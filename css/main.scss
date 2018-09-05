@@ -1,0 +1,16 @@
+body {
+  background: #252F48 url(../images/grayfloor.png);
+  padding: 0;
+  margin: 0;
+
+  table {
+    width: 1920px;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    td {
+      // layout
+      //border: #C2D076 dashed 1px;
+    }
+  }
+}

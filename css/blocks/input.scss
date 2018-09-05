@@ -1,0 +1,36 @@
+.base_block_input {
+  vertical-align: top;
+  font-family: Sans-Serif, serif;
+
+  p:not(#button) {
+    color: #c4c4c4;
+    text-align: center;
+    background: #111111;
+    border: #c90075 dashed 1px;
+
+    margin: 5px 0;
+    padding: 12px 0;
+
+    height: 25px;
+  }
+}
+
+#block_input {
+  @extend .base_block_input;
+  //width: 600px;
+
+  p {
+    label {
+      margin: 0 0.25%;
+    }
+  }
+}
+
+.block_variables {
+  @extend .base_block_input;
+  @extend .column_placeholder_small;
+
+  p {
+    margin: 5px 5px;
+  }
+}

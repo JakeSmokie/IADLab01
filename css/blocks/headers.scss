@@ -1,0 +1,26 @@
+@import "base";
+
+.block_base_header {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+  font-size: 14px;
+  color: #c4c4c4;
+  padding: 0 8px;
+}
+
+.block_name {
+  @extend .block_base;
+  @extend .block_base_header;
+
+  //width: 600px;
+  height: 50px;
+
+  vertical-align: center;
+  text-align: center;
+  font-size: 16px;
+
+  border-top: none !important;
+
+  > p {
+    line-height: 75%;
+  }
+}

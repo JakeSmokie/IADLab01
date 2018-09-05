@@ -1,0 +1,36 @@
+.checkbox,
+.radio {
+  display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+  width: 15px;
+  height: 15px;
+  border: 0.5px solid #D8005F;
+  border-radius: 3px;
+  background: #001514;
+  position: relative;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom,
+.radio:checked + .radio-custom {
+  border: #C2D076 solid 0.5px;
+}
+
+.checkbox:hover:not(:checked) + .checkbox-custom,
+.radio:hover:not(:checked) + .radio-custom {
+  border: #058ED9 solid 0.5px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+  border-radius: 50%;
+}
