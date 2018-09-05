@@ -1,53 +1,36 @@
-function submitForm(form) {
+async function submitForm(form) {
     if (!validateForm(form)) {
         return;
     }
 
     const args = $("#form").serialize();
+    const response = await $.get('generate_results.php?' + args);
 
-    let request = new XMLHttpRequest();
-    request.open('GET', 'generate_results.php?' + args, true);
-    request.onreadystatechange = () => {
-        if (request.status !== 200) {
-            return;
-        }
-
-        $("#results").html(request.responseText);
-    };
-
-    request.send();
+    $("#results").html(response);
 }
 
 function validateForm(form) {
     const valid = checkForm(form);
 
     if (!valid) {
-        document
-            .getElementById('results')
-            .textContent =
-            'Введены некорректные значения';
+        $("#results").html('Введены некорректные значения');
     }
 
     return valid;
 }
 
 function checkForm(form) {
-    let non_valid = false;
+    let invalid = false;
 
-    non_valid |= validateX();
-    non_valid |= validateY(form.y.value);
-    non_valid |= validateR(form.r.value);
+    invalid |= validateX();
+    invalid |= validateY(form.y.value);
+    invalid |= validateR(form.r.value);
 
-    return !non_valid;
+    return !invalid;
 }
 
 function validateX() {
-    const count = Array.from(document.getElementsByName("x"))
-        .filter(x => x.type && (x.type === "checkbox"))
-        .map(x => x.checked)
-        .reduce((a, x) => a + x);
-
-    return count !== 1;
+    return $("input:checkbox:checked").length !== 1;
 }
 
 function validateR(value) {

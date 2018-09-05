@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="images/icons/skull.ico" sizes="">
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!-- Local Fallback -->
-    <script>window.jQuery || document.write('<script src="../../js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="../../js/jquery-3.3.1.js"><\/script>')</script>
     <script type="application/javascript" src="script.js">
     </script>
 </head>
